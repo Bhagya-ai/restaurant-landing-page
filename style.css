@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF5F0;
+}
+
+/* ========== HEADER ========== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    width: 100px;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FF6A88;  /* Coral Pink */
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+    background: linear-gradient(135deg, #FF9A8B 0%, #FF6A88 100%);  /* Peach to Coral gradient */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    color: #FFFFFF;
+}
+
+.hero p {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #FFFFFF;
+    color: #FF6A88;  /* Coral Pink */
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(255, 106, 136, 0.3);
+    
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 106, 136, 0.4);
+    background-color: #FF6A88;
+    color: #FFFFFF;
+}
+
+/* ========== ABOUT SECTION ========== */
+.about {
+    padding: 80px 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-weight: bold;
+    color: #2C3E50;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.about p {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    line-height: 1.8;
+    color: #7F8C8D;
+    margin-bottom: 15px;
+}
+
+/* ========== MENU SECTION ========== */
+.menu {
+    padding: 80px 20px;
+    background-color:palevioletred;  /* Light cream/peach background */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-weight: bold;
+    color: #2C3E50;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.menu-item {
+    background-color: #FFFFFF;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 154, 139, 0.15);  /* Peach shadow */
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.menu-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255, 106, 136, 0.25);  /* Coral shadow on hover */
+    border: 2px solid #FFD3A5;  /* Light peach border */
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    color: #2C3E50;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #7F8C8D;
+    font-weight: normal;
+}
+
+.price {
+    color: #FF6A88;  /* Coral Pink */
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* ========== CONTACT SECTION ========== */
+.contact {
+    padding: 80px 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #2C3E50;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.contact-info p {
+    font-weight: 600;
+    font-size: 18px;
+    color: #7F8C8D;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #FF6A88;  /* Coral Pink */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #FF9A8B;  /* Lighter peach on hover */
+}
+
+
